@@ -1,4 +1,3 @@
-<!-- portfolio grid option -->
 <!DOCTYPE html>
 <html>
 <title>W3.CSS Template</title>
@@ -7,20 +6,25 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Bootstrap Core CSS -->
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="./css/scrolling-nav.css" rel="stylesheet">
+
 <style>
 body,h1 {font-family: "Montserrat", sans-serif}
 img {margin-bottom: -7px}
 .w3-row-padding img {margin-bottom: 12px}
 </style>
-<body class="w3-light-grey w3-content" style="max-width:1600px">
+<body class="w3-light-grey w3-content" style="max-width:1600px" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
   <h3 class="w3-padding-64 w3-center"><b>LAUREN<br>HERGT</b></h3>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a> 
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a> 
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="#page-top" class="w3-bar-item w3-button page-scroll">PORTFOLIO</a> 
+  <a href="#about" class="w3-bar-item w3-button page-scroll">ABOUT ME</a> 
+  <a href="#contact" class="w3-bar-item w3-button page-scroll">CONTACT</a>
 </nav>
 
 <!-- Top menu on small screens -->
@@ -42,34 +46,58 @@ img {margin-bottom: -7px}
 </div>
 
 <!-- Photo Grid -->
-<div class="w3-row-padding" id="myGrid" style="margin-bottom:128px">
-  <div class="w3-third">
-    <img src="/w3images/rocks.jpg" style="width:100%" onclick="onClick(this)">
-    <img src="/w3images/sound.jpg" style="width:100%" onclick="onClick(this)">
-    <img src="/w3images/woods.jpg" style="width:100%" onclick="onClick(this)">
-    <img src="/w3images/rock.jpg" style="width:100%" onclick="onClick(this)">
-    <img src="/w3images/nature.jpg" style="width:100%" onclick="onClick(this)">
-    <img src="/w3images/mist.jpg" style="width:100%" onclick="onClick(this)">
-  </div>
+<section id="porfolio">
+  <div class="w3-row-padding" id="myGrid" style="margin-bottom:32px">
+    <div class="w3-third">
+      <img src="./images/soul.jpg" style="width:100%" onclick="onClick(this)">
 
-  <div class="w3-third">
-    <img src="/w3images/coffee.jpg" style="width:100%" onclick="onClick(this)">
-    <img src="/w3images/bridge.jpg" style="width:100%" onclick="onClick(this)">
-    <img src="/w3images/notebook.jpg" style="width:100%" onclick="onClick(this)">
-    <img src="/w3images/london.jpg" style="width:100%" onclick="onClick(this)">
-    <img src="/w3images/rocks.jpg" style="width:100%" onclick="onClick(this)">
-    <img src="/w3images/avatar_g.jpg" style="width:100%" onclick="onClick(this)">
-  </div>
+      <img src="./images/band.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./images/keys.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./images/heels.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./images/ornamental.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./images/band2.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./images/wedding2.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./images/baby.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./images/alley.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./images/katie.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./images/dance.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./images/bark.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./images/sunbeam.jpg" style="width:100%" onclick="onClick(this)">
+    </div>
 
-  <div class="w3-third">
-    <img src="/w3images/mist.jpg" style="width:100%" onclick="onClick(this)">
-    <img src="/w3images/workbench.jpg" style="width:100%" onclick="onClick(this)">
-    <img src="/w3images/gondol.jpg" style="width:100%" onclick="onClick(this)">
-    <img src="/w3images/skies.jpg" style="width:100%" onclick="onClick(this)">
-    <img src="/w3images/lights.jpg" style="width:100%" onclick="onClick(this)">
-    <img src="/w3images/workshop.jpg" style="width:100%" onclick="onClick(this)">
+    <div class="w3-third">
+      <img src="./images/floral.jpg" style="width:100%" onclick="onClick(this)">   
+      <img src="./images/wedding.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./images/couple1.png" style="width:100%" onclick="onClick(this)">   
+      <img src="./images/doorway.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./images/red.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./images/fatherson.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./images/table.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./images/didi2.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./images/lavender.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./images/cupcakes.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./images/suit.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./images/pink.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./images/Peacock.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./images/lights.jpg" style="width:100%" onclick="onClick(this)"> 
+    </div>
+
+    <div class="w3-third">
+      <img src="./images/ryan.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./images/flower.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./images/reflection.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./images/car.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./images/prom.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./images/grass.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./images/weddingdress.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./images/love.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./images/babyfeet.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./images/sunset.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./images/bokeh.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./images/sunflower.jpg" style="width:100%" onclick="onClick(this)">      
+    </div>
   </div>
-</div>
+</section>
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
@@ -133,6 +161,14 @@ img {margin-bottom: -7px}
 
 <script>
 
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
 // Open and close sidebar
 function w3_open() {
     document.getElementById("mySidebar").style.display = "block";
@@ -143,6 +179,16 @@ function w3_close() {
     document.getElementById("myOverlay").style.display = "none";
 }
 </script>
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Scrolling Nav JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/scrolling-nav.js"></script>
 
 </body>
 </html>
